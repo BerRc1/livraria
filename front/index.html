@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Livraria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cadastro da Livraria</h1>
+
+  <form id="livroForm">
+    <input type="hidden" id="livroId">
+    <input type="text" id="titulo" placeholder="Título" required>
+    <input type="text" id="autor" placeholder="Autor" required>
+    <input type="number" id="ano" placeholder="Ano" required>
+    <input type="text" id="genero" placeholder="Gênero" required>
+    <input type="text" id="idioma" placeholder="Idioma" required>
+    <input type="number" step="0.01" id="preco" placeholder="Preço" required>
+    <button type="submit">Salvar</button>
+  </form>
+
+  <h2>Livros Cadastrados</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>Título</th><th>Autor</th><th>Ano</th><th>Gênero</th><th>Idioma</th><th>Preço</th><th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaLivros"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
